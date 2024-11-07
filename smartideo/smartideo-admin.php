@@ -95,7 +95,6 @@ class smartideo_admin{
                         </fieldset>
                     </td>
                 </tr>';
-        if(in_array(strtolower(md5(isset($option['smartideo_code']) ? $option['smartideo_code'] : '')), array('0d2482878d1f6685a1bb0929fcffecda', '1946d9089a7396f93fa5f1853caae0ef', '023119c6e72f74384920337444a5439a'))){
             echo '<tr valign="top">
                     <th scope="row">优酷client_id</th>
                     <td>
@@ -123,26 +122,12 @@ class smartideo_admin{
                         </fieldset>
                     </td>
                 </tr>';
-        }else{
-            echo '<tr valign="top">
-                <th scope="row">高级功能激活码</th>
-                <td>
-                    <label><input type="text" class="regular-text code" name="smartideo_code" value="' . (isset($option['smartideo_code']) ? $option['smartideo_code'] : '') . '"></label>
-                    <br />
-                    <p class="description">
-                        使用方法：<br />
-                        1.升级到最新版本（<a href="https://www.rifuyiri.net/3639#changelog" target="_blank">' . SMARTIDEO_VERSION . '</a>），填入激活码保存后可开启高级功能。<br />
-                        2.激活码关注微信公众号“Typer”回复“Smartideo Code”即可获得～<br />
-                        注意：如果激活码失效，请按照上述方法重新获取。</p>
-                </td>
-            </tr>';
-        }
         echo '</table>
             <p class="submit"><input type="submit" name="smartideo_submit" id="submit" class="button-primary" value="保存"></p>
             </form>';
         echo '<h2>意见反馈</h2>
             <p>你的意见是Smartido成长的动力，欢迎给我们留言，或许你想要的功能下一个版本就会实现哦！</p>
-            <p>插件官方页面：<a href="https://www.rifuyiri.net/3639" target="_blank">https://www.rifuyiri.net/3639</a></p>
+            <p>插件官方页面：<a href="https://7yper.com/3639" target="_blank">https://7yper.com/3639</a></p>
             <p>微信公众号：Typer</p>
         ';
     }
